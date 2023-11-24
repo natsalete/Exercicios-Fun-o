@@ -3,36 +3,31 @@
 
 using namespace std;
 
-// 9. Faça uma função capaz de receber três números a, b e c, e imprimir as duas raízes da
-// equação do segundo grau. Se a função tem apenas uma raiz, imprimir apenas essa raiz. Se
-// não tiver raiz, imprima não existem raízes.
+// 11. Faça uma função que receba um número positivo e imprima todos os seus divisores.
+// Exemplo: os divisores do número 66 são: 1, 2, 3, 6, 11, 22, 33 e 66.
 
-int soma(int a, int b){
-    int soma = 0;
-    if(a > b){
-        return 0;
-    }else {
-        for(int i = a; i < b; i++){
-            if(i % 2 == 0){
-                soma += i;
-            }
+void divisores(int a){
+    cout << "Os divisores do numero ", a, " são: ";
+    for(int i = 1; i < a; i++){
+        if(a % i == 0){
+            cout << i << ", ";
         }
     }
-    return soma;
+    cout << a << "." << endl;
 }
 
 
 int main(){
 
-    int a, b;
+    int a;
 
-    cin >> a >> b;
+    cin >> a;
 
-    int result = soma(a, b);
+    divisores(a);
 
-    cout << result << endl;
 
     return 0;
 }
+
 
 
