@@ -3,6 +3,9 @@
 
 using namespace std;
 
+// 3. Crie uma função capaz de receber 1 número n qualquer e imprimir todos os números de 1
+// a n.
+
  void numero(int n){
     for(int i = 1; i <= n; i++){
         cout << i << endl;
