@@ -3,9 +3,9 @@
 
 using namespace std;
 
-// 9. Faça uma função capaz de receber três números a, b e c, e imprimir as duas raízes da
-// equação do segundo grau. Se a função tem apenas uma raiz, imprimir apenas essa raiz. Se
-// não tiver raiz, imprima não existem raízes.
+// 10. Faça uma função capaz de receber dois números a e b, onde o primeiro sempre é menor
+// que o segundo, e calcula a soma dos números pares compreendidos entre os dois números
+// lidos.
 
 int soma(int a, int b){
     int soma = 0;
