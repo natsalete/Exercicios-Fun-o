@@ -1,15 +1,10 @@
 #include<iostream>
-
+#include <math.h>
 
 using namespace std;
 
-// 1. Crie uma função capaz de receber 3 números a, b e c, e retornar o delta desses números.
-
-double maior(double x, double y){
-    int maior = 0;
-     if(x > y){
-       maior  
-     }
+int delta(int a, int b, int c){
+     int delta = pow(b, 2) - 4 * a* c;
     return delta;
 }
 
@@ -20,9 +15,9 @@ int main(){
 
     cin >> a >> b >> c;
 
-    delta(a, b, c);
+    int result = delta(a, b, c);
 
-    cout << delta << endl;
+    cout << result << endl;
 
 
     return 0;
